@@ -24,7 +24,7 @@ import ButtonContact from './ui/ButtonContact.vue'
 export default {
     components:{
         ButtonContact,
-    }
+    },
 }
 </script>
 

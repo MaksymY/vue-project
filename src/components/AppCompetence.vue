@@ -1,5 +1,5 @@
 <template>
-  <div class="content">
+  <div class="competence">
     <h1>Quelque une de mes Compétences</h1>
     <ul>
       <li v-for="(data, index) in myJson" :key="index">
@@ -24,21 +24,26 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-  .content{
+  .competence{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 40px;
+    width: 90%;
+
     h1{
-      font-size: 24px;
-      margin-left: 5%;
-      margin-top: 40px;
+      font-size: 20px;
+      font-weight: normal;
     }
+    
     ul{
-      margin-top: 40px;
+      margin-top: 20px;
       display: flex;
-      justify-content: center;
-      flex-direction: row;
-      flex-wrap: wrap;
 
       li{
         width: 30%;
+        display: flex;
+        flex-direction: column;
 
         img{
           width: 70%;

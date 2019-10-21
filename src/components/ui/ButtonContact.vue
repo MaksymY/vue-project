@@ -1,13 +1,19 @@
 <template>
-    <button class="contact">
+    <button class="contact" @click="toggleContactModal">
         <img class="phone" src="../../assets/phone.svg" alt="contact">
         Contactez moi
     </button>
 </template>
 
 <script>
+import { mapActions } from 'vuex'
+
 export default {
-    
+    methods: {
+        ...mapActions([
+            "toggleContactModal",
+        ]),
+    },
 }
 </script>
 
